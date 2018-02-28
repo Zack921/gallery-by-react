@@ -1,21 +1,42 @@
 /* Base Application Styles */
-body {
-  color: #fff;
-  background: #222;
+html,body{
+  padding : 0;
+  margin : 0;
+  background-color : #222;
+  width : 100%;
+  height : 100%;
 }
 
-.index img {
-  margin: 40px auto;
-  border-radius: 4px;
-  background: #fff;
-  display: block;
+.app{
+  width : 100%;
+  height : 100%;
 }
 
-.index .notice {
-  margin: 20px auto;
-  padding: 15px 0;
-  text-align: center;
-  border: 1px solid #000;
-  border-width: 1px 0;
-  background: #666;
+/* stage -- start */
+.stage{
+  width : 100%;
+  height : 680px;
+  position : relative;  
 }
+/* stage -- end */
+
+/* img-sec -- start */
+.img-sec{
+  position : relative;
+  width : 100%;
+  height : 100%;
+  overflow : hidden;
+  background-color : #ddd;
+}
+/* img-sec -- end */
+
+/* controller-nav -- start */
+.controller-nav{
+  position : absolute;
+  left : 0;
+  bottom : 30px;
+  width : 100%;
+  z-index : 101;
+  text-align : center;
+}
+/* controller-nav -- end */

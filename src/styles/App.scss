@@ -27,6 +27,27 @@ html,body{
   height : 100%;
   overflow : hidden;
   background-color : #ddd;
+
+  @at-root{//使下列样式与.img-sec平级，提高性能
+    .img-figure{
+      width : 320px;
+      height : 360px;
+      margin : 0;
+      padding : 40px;
+      box-sizing : border-box;
+      background-color : #fff;
+      position : absolute;
+    }
+    figcaption{
+      text-align : center;
+
+      .img-title{
+        margin : 20px 0 0 0;
+        color : #a7a0a2;
+        font-size : 16px;
+      }
+    }
+  }
 }
 /* img-sec -- end */
 
